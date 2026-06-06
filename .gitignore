@@ -1,5 +1,75 @@
-.venv
-/venv
-venv
-*/__pycache__/*
-*/*/__pycache__/*/*
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments and local Python installs
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# Build/package outputs
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ML experiment outputs and model artifacts
+mlruns/
+wandb/
+lightning_logs/
+runs/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.onnx
+
+# Large/local data folders
+# Keep small project CSVs tracked unless you move them into these folders.
+data/raw/
+data/interim/
+data/processed/
+datasets/
+
+# Generated reports/exports
+*.pdf
+*.html
